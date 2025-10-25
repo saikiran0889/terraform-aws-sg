@@ -1,26 +1,29 @@
 variable "sg_name" {
-  default = "roboshopsg"
+    type = string
+
 }
 
 variable "description" {
-  default = "this is default security group"
+    type = string
+
 }
 
-variable "sg_tags" {
-  default = ""
-}
 
 variable "vpc_id" {
+    type = string
   
 }
 
 variable "sg_tags" {
-  default = {}
+    type = map
+     default = {}
 }
 
 variable "projectname" {
+    type = string
   
 }
 variable "environment" {
+    type = string
   
 }
